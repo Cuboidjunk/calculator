@@ -1,4 +1,3 @@
-nummer1 = float(input("ange första nummret"))
 print("(1) addition")
 print("(2) subtraktion")
 print("(3) multiplikation")
@@ -7,8 +6,10 @@ print("(5) upphöjt till")
 print("(6) roten ur")
 typ = input("välj 1-6")
 if(typ != "6"):
+  nummer1 = float(input("ange första nummret"))
   nummer2 = float(input("ange andra nummret"))
 else:
+  nummer1 = float(input("ange nummer"))
   svar = nummer1 ** 0.5
 
 

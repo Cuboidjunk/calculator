@@ -1,0 +1,16 @@
+nummer1 = int(input("ange första nummret"))
+nummer2 = int(input("ange andra nummret"))
+typ = input("välj mellan + - * /")
+
+
+if(typ == "+"):
+  svar = nummer1 + nummer2
+if(typ == "-"):
+  svar = nummer1 - nummer2
+if(typ == "*"):
+  svar = nummer1 * nummer2
+if(typ == "/"):
+  svar = nummer1 / nummer2
+  
+  
+print(svar)

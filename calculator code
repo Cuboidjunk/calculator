@@ -1,6 +1,9 @@
 nummer1 = float(input("ange första nummret"))
-typ = input("välj mellan + - * /")
-nummer2 = float(input("ange andra nummret"))
+typ = input("välj mellan ( + ) ( - ) ( * ) ( / ) ( ^ ) (roten ur)")
+if(typ != "roten ur"):
+  nummer2 = float(input("ange andra nummret"))
+else:
+  svar = nummer1 ** 0.5
 
 
 if(typ == "+"):
@@ -11,6 +14,11 @@ if(typ == "*"):
   svar = nummer1 * nummer2
 if(typ == "/"):
   svar = nummer1 / nummer2
+if(typ == "^"):
+  svar = nummer1 ** nummer2
   
-  
-print(str(nummer1) + " " + typ + " " + str(nummer2) + " = " + str(svar))
+
+if(typ != "roten ur"):
+  print(str(nummer1) + " " + typ + " " + str(nummer2) + " = " + str(svar))
+else:
+  print("√" + str(nummer1) + " = " + str(svar))

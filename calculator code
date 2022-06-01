@@ -1,24 +1,35 @@
 nummer1 = float(input("ange första nummret"))
-typ = input("välj mellan ( + ) ( - ) ( * ) ( / ) ( ^ ) (roten ur)")
-if(typ != "roten ur"):
+print("(1) addition")
+print("(2) subtraktion")
+print("(3) multiplikation")
+print("(4) division")
+print("(5) upphöjt till")
+print("(6) roten ur")
+typ = input("välj 1-6")
+if(typ != "6"):
   nummer2 = float(input("ange andra nummret"))
 else:
   svar = nummer1 ** 0.5
 
 
-if(typ == "+"):
+if(typ == "1"):
   svar = nummer1 + nummer2
-if(typ == "-"):
+  densaken = "+"
+if(typ == "2"):
   svar = nummer1 - nummer2
-if(typ == "*"):
+  densaken = "-"
+if(typ == "3"):
   svar = nummer1 * nummer2
-if(typ == "/"):
+  densaken = "*"
+if(typ == "4"):
   svar = nummer1 / nummer2
-if(typ == "^"):
+  densaken = "/"
+if(typ == "5"):
   svar = nummer1 ** nummer2
+  densaken = "^"
   
 
-if(typ != "roten ur"):
-  print(str(nummer1) + " " + typ + " " + str(nummer2) + " = " + str(svar))
+if(typ != "6"):
+  print(str(nummer1) + " " + densaken + " " + str(nummer2) + " = " + str(svar))
 else:
   print("√" + str(nummer1) + " = " + str(svar))

@@ -3,12 +3,31 @@ print("(2) subtraktion")
 print("(3) multiplikation")
 print("(4) division")
 print("(5) upphöjt till")
-print("(6) roten ur")
+print("(6) kvadratroten ur")
 typ = input("välj 1-6")
-if(typ != "6"):
-  nummer1 = float(input("ange första nummret"))
-  nummer2 = float(input("ange andra nummret"))
-else:
+
+
+if(typ == "1"):
+  nummer1 = float(input("ange första termen"))
+  nummer2 = float(input("ange andra termen"))
+
+if(typ == "2"):
+  nummer1 = float(input("ange första termen"))
+  nummer2 = float(input("ange andra termen"))
+  
+if(typ == "3"):
+  nummer1 = float(input("ange första faktorn"))
+  nummer2 = float(input("ange andra faktorn"))
+  
+if(typ == "4"):
+  nummer1 = float(input("ange täljare"))
+  nummer2 = float(input("ange nämnare"))
+
+if(typ == "5"):
+  nummer1 = float(input("ange basnummer"))
+  nummer2 = float(input("ange exponent"))
+
+if(typ == "6"):
   nummer1 = float(input("ange nummer"))
   svar = nummer1 ** 0.5
 

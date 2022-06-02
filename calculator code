@@ -1,10 +1,11 @@
-print("(1) Addition")
-print("(2) Subtraktion")
-print("(3) Multiplikation")
-print("(4) Division")
-print("(5) Upphöjt till")
-print("(6) Kvadratroten ur")
-typ = input("Välj 1-6 och tryck enter:")
+print("(1) +")
+print("(2) -")
+print("(3) *")
+print("(4) /")
+print("(5) ^")
+print("(6) √")
+print("(7) x√")
+typ = input("Välj 1-7 och tryck enter:")
 
 
 if(typ == "1"):
@@ -29,27 +30,40 @@ if(typ == "5"):
 
 if(typ == "6"):
   nummer1 = float(input("Ange nummer:"))
-  svar = nummer1 ** 0.5
+
+if(typ == "7"):
+  nummer1 = float(input("Ange x"))
+  nummer2 = float(input("Ange nummer"))
 
 
 if(typ == "1"):
   svar = nummer1 + nummer2
-  densaken = "+"
 if(typ == "2"):
   svar = nummer1 - nummer2
-  densaken = "-"
 if(typ == "3"):
   svar = nummer1 * nummer2
-  densaken = "*"
 if(typ == "4"):
   svar = nummer1 / nummer2
-  densaken = "/"
 if(typ == "5"):
   svar = nummer1 ** nummer2
-  densaken = "^"
+if(typ == "6"):
+  svar = nummer1 ** 0.5
+if(typ == "7"):
+  a = 1 / nummer1
+  svar = nummer2 ** a
   
 
-if(typ != "6"):
-  print(str(nummer1) + " " + densaken + " " + str(nummer2) + " = " + str(svar))
-else:
+if(typ == "1"):
+  print(str(nummer1) + " + " + str(nummer2) + " = " + str(svar))
+if(typ == "2"):
+  print(str(nummer1) + " - " + str(nummer2) + " = " + str(svar))
+if(typ == "3"):
+  print(str(nummer1) + " * " + str(nummer2) + " = " + str(svar))
+if(typ == "4"):
+  print(str(nummer1) + " / " + str(nummer2) + " = " + str(svar))
+if(typ == "5"):
+  print(str(nummer1) + " ^ " + str(nummer2) + " = " + str(svar))
+if(typ == "6"):
   print("√" + str(nummer1) + " = " + str(svar))
+if(typ =="7"):
+  print(str(nummer1) + "√ " + str(nummer2) + " = " + str(svar))

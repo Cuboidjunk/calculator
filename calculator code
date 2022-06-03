@@ -5,7 +5,10 @@ print("(4) /")
 print("(5) ^")
 print("(6) √")
 print("(7) x√")
+
 typ = input("Välj 1-7 och tryck enter:")
+while typ not in ("1", "2", "3", "4", "5", "6", "7"):
+  typ = input("Du gjorde fel, välj mellan 1-7 och tryck enter")
 
 
 if(typ == "1"):

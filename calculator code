@@ -5,38 +5,33 @@ print("(4) /")
 print("(5) ^")
 print("(6) √")
 print("(7) x√")
-
 typ = input("Välj 1-7 och tryck enter:")
 while typ not in ("1", "2", "3", "4", "5", "6", "7"):
   typ = input("Du gjorde fel, välj mellan 1-7 och tryck enter")
 
 
+
 if(typ == "1"):
   nummer1 = float(input("Ange första termen:"))
   nummer2 = float(input("Ange andra termen:"))
-
 if(typ == "2"):
   nummer1 = float(input("Ange första termen:"))
   nummer2 = float(input("Ange andra termen:"))
-  
 if(typ == "3"):
   nummer1 = float(input("Ange första faktorn:"))
   nummer2 = float(input("Ange andra faktorn:"))
-  
 if(typ == "4"):
   nummer1 = float(input("Ange täljare:"))
   nummer2 = float(input("Ange nämnare:"))
-
 if(typ == "5"):
   nummer1 = float(input("Ange basnummer:"))
   nummer2 = float(input("Ange exponent:"))
-
 if(typ == "6"):
   nummer1 = float(input("Ange nummer:"))
-
 if(typ == "7"):
   nummer1 = float(input("Ange x"))
   nummer2 = float(input("Ange nummer"))
+
 
 
 if(typ == "1"):
@@ -54,7 +49,8 @@ if(typ == "6"):
 if(typ == "7"):
   a = 1 / nummer1
   svar = nummer2 ** a
-  
+
+
 
 if(typ == "1"):
   print(str(nummer1) + " + " + str(nummer2) + " = " + str(svar))

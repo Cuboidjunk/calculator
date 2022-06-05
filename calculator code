@@ -10,27 +10,118 @@ while typ not in ("1", "2", "3", "4", "5", "6", "7"):
   typ = input("Du gjorde fel, välj mellan 1-7 och tryck enter")
 
 
+if typ == "1":
+  while True:
+    try:
+      nummer1 = float(input("Ange första termen:"))
+    except ValueError:
+      print("Du gjorde fel, försök igen.")
+      continue
+    else: 
+      break
+  while True:
+    try:
+      nummer2 = float(input("Ange andra termen:"))
+    except ValueError:
+      print("Du gjorde fel, försök igen.")
+      continue
+    else:
+      break
 
-if(typ == "1"):
-  nummer1 = float(input("Ange första termen:"))
-  nummer2 = float(input("Ange andra termen:"))
-if(typ == "2"):
-  nummer1 = float(input("Ange första termen:"))
-  nummer2 = float(input("Ange andra termen:"))
-if(typ == "3"):
-  nummer1 = float(input("Ange första faktorn:"))
-  nummer2 = float(input("Ange andra faktorn:"))
-if(typ == "4"):
-  nummer1 = float(input("Ange täljare:"))
-  nummer2 = float(input("Ange nämnare:"))
-if(typ == "5"):
-  nummer1 = float(input("Ange basnummer:"))
-  nummer2 = float(input("Ange exponent:"))
-if(typ == "6"):
-  nummer1 = float(input("Ange nummer:"))
-if(typ == "7"):
-  nummer1 = float(input("Ange x"))
-  nummer2 = float(input("Ange nummer"))
+if typ == "2":
+  while True:
+    try:
+      nummer1 = float(input("Ange första termen:"))
+    except ValueError:
+      print("Du gjorde fel, försök igen.")
+      continue
+    else: break
+  while True:
+    try:
+      nummer2 = float(input("Ange andra termen:"))
+    except ValueError:
+      print("Du gjorde fel, försök igen.")
+      continue
+    else:
+      break
+
+if typ == "3":
+  while True:
+    try:
+      nummer1 = float(input("Ange första faktorn:"))
+    except ValueError:
+      print("Du gjorde fel, försök igen.")
+      continue
+    else: break
+  while True:
+    try:
+      nummer2 = float(input("Ange andra faktorn:"))
+    except ValueError:
+      print("Du gjorde fel, försök igen.")
+      continue
+    else:
+      break
+
+if typ == "4":
+  while True:
+    try:
+      nummer1 = float(input("Ange täljare:"))
+    except ValueError:
+      print("Du gjorde fel, försök igen.")
+      continue
+    else: break
+  while True:
+    try:
+      nummer2 = float(input("Ange nämnare:"))
+    except ValueError:
+      print("Du gjorde fel, försök igen.")
+      continue
+    else:
+      break
+
+if typ == "5":
+  while True:
+    try:
+      nummer1 = float(input("Ange basnummer:"))
+    except ValueError:
+      print("Du gjorde fel, försök igen.")
+      continue
+    else: break
+  while True:
+    try:
+      nummer2 = float(input("Ange exponent:"))
+    except ValueError:
+      print("Du gjorde fel, försök igen.")
+      continue
+    else:
+      break
+
+if typ == "6":
+  while True:
+    try:
+      nummer1 = float(input("Ange nummer:"))
+    except ValueError:
+      print("Du gjorde fel, försök igen.")
+      continue
+    else: break
+
+if typ == "7":
+  while True:
+    try:
+      nummer1 = float(input("Ange x:"))
+    except ValueError:
+      print("Du gjorde fel, försök igen.")
+      continue
+    else: break
+  while True:
+    try:
+      nummer2 = float(input("Ange nummer:"))
+    except ValueError:
+      print("Du gjorde fel, försök igen.")
+      continue
+    else:
+      break
+
 
 
 

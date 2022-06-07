@@ -1,8 +1,9 @@
+import os
 while True:
   print("(1) +\n(2) -\n(3) *\n(4) /\n(5) ^\n(6) √\n(7) x√")
   typ = input("Välj 1-7 och tryck enter:")
   while typ not in ("1", "2", "3", "4", "5", "6", "7"):
-    typ = input("Du gjorde fel, välj mellan 1-7 och tryck enter")
+    typ = input("Du gjorde fel, välj mellan 1-7 och tryck enter:")
 
 
 
@@ -111,7 +112,8 @@ while True:
     except:
       pass
   if igen in ("N", "n"):
+    os.system('clear')
     break
   if igen in ("Y", "y"):
     igen = "haha"
-    print("\n")
+    os.system('clear')

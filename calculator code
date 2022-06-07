@@ -5,10 +5,10 @@ while typ not in ("1", "2", "3", "4", "5", "6", "7"):
 
 
 
-if typ == "1":
+if typ in ("1", "2", "3", "4"):
   while True:
     try:
-      nummer1 = float(input("Ange första termen:"))
+      nummer1 = float(input("Ange första nummret:"))
     except ValueError:
       print("Du gjorde fel, försök igen.")
       continue
@@ -16,63 +16,14 @@ if typ == "1":
       break
   while True:
     try:
-      nummer2 = float(input("Ange andra termen:"))
+      nummer2 = float(input("Ange andra nummret:"))
     except ValueError:
       print("Du gjorde fel, försök igen.")
       continue
     else:
       break
 
-if typ == "2":
-  while True:
-    try:
-      nummer1 = float(input("Ange första termen:"))
-    except ValueError:
-      print("Du gjorde fel, försök igen.")
-      continue
-    else: break
-  while True:
-    try:
-      nummer2 = float(input("Ange andra termen:"))
-    except ValueError:
-      print("Du gjorde fel, försök igen.")
-      continue
-    else:
-      break
 
-if typ == "3":
-  while True:
-    try:
-      nummer1 = float(input("Ange första faktorn:"))
-    except ValueError:
-      print("Du gjorde fel, försök igen.")
-      continue
-    else: break
-  while True:
-    try:
-      nummer2 = float(input("Ange andra faktorn:"))
-    except ValueError:
-      print("Du gjorde fel, försök igen.")
-      continue
-    else:
-      break
-
-if typ == "4":
-  while True:
-    try:
-      nummer1 = float(input("Ange täljare:"))
-    except ValueError:
-      print("Du gjorde fel, försök igen.")
-      continue
-    else: break
-  while True:
-    try:
-      nummer2 = float(input("Ange nämnare:"))
-    except ValueError:
-      print("Du gjorde fel, försök igen.")
-      continue
-    else:
-      break
 
 if typ == "5":
   while True:

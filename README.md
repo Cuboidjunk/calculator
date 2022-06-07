@@ -1,2 +1,2 @@
 # calculator
-two number calculator with + - * / √ x√
+two number calculator with  +  -  *  /  ^  √  x√

@@ -1,12 +1,16 @@
+# denna används senare för att cleara all printad text
 import os
+# denna loopar hela miniräknaren vilket gör det möjligt att använda den hur många gånger som helst tills man väljer att man är klar
 while True:
+  # denna deler prinar ut de sakerna miniräknaren kan användas för och frågar efter vad man vill göra
   print("(1) +\n(2) -\n(3) *\n(4) /\n(5) ^\n(6) √\n(7) x√")
   typ = input("Välj 1-7 och tryck enter:")
+  # denna loopen ser till att man inte kan ange ett felaktigt svar genom att repetera frågan tills man ger ett accepterat svar
   while typ not in ("1", "2", "3", "4", "5", "6", "7"):
     typ = input("Du gjorde fel, välj mellan 1-7 och tryck enter:")
 
 
-
+  # denna delen frågar efter nummerna om man valde 1, 2, 3 eller 4 i den första frågan. Den fortsätter fråga tills man ger den två nummer
   if typ in ("1", "2", "3", "4"):
     while True:
       try:
@@ -26,7 +30,7 @@ while True:
         break
 
 
-
+# denna delen gör samma sak som förra fast om man svarar 5 istället eftersom jag ville ha annorlunda text till denna
   if typ == "5":
     while True:
       try:
@@ -44,6 +48,7 @@ while True:
       else:
         break
 
+# denna deler gör samma sak som förra fast om man svarar 6 istället då den bara behöver ett nummer då
   if typ == "6":
     while True:
       try:
@@ -53,6 +58,7 @@ while True:
         continue
       else: break
 
+# denna delen gör samma sak som förra fast om man svarar 7 istället eftersom jag ville att den skulle printa annan text
   if typ == "7":
     while True:
       try:
@@ -71,7 +77,7 @@ while True:
         break
 
 
-
+# denna delen räknar ut vad svaret blir
   if(typ == "1"):
     svar = nummer1 + nummer2
   if(typ == "2"):
@@ -89,7 +95,7 @@ while True:
     svar = nummer2 ** a
 
 
-
+# denna deler printar svaret på ett fint sätt
   if(typ == "1"):
     print(str(nummer1) + " + " + str(nummer2) + " = " + str(svar))
   if(typ == "2"):
@@ -105,6 +111,7 @@ while True:
   if(typ =="7"):
     print(str(nummer1) + "√ " + str(nummer2) + " = " + str(svar))
   
+  # denna delen frågar om man vill göra en ny uträkning. säger man ja så upprepas loopen i allra början. säger man nej så avslutas loopen
   igen = "haha"
   while igen not in ("Y", "y", "N", "n"):
     try:
